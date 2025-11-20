@@ -17,9 +17,9 @@ const ScrollImages = ({ images}) => {
 
      <div className="bg-white pb-14 relative">
      <div className="absolute -top-14 -left-4 z-10 flex flex-col items-center">
-  <img className="w-60 -rotate-10 h-auto" src="./image3.png" alt="" />
+  <img className="lg:w-60 w-45 -rotate-10 h-auto" src="./image3.png" alt="" />
 </div>
-<div className="absolute top-10 left-6 text-6xl z-11 ">
+<div className="absolute lg:top-10 top-2 lg:left-6 left-3 sm:text-6xl text-5xl z-11 ">
 <p className="text-pink-500 font-bold -rotate-5 classconfig">{calculateDays()} Days</p>
 
   </div>
