@@ -4,7 +4,7 @@ const Header = () => {
   return (
 
   <div>
-    {/* <div className="fixed top-6 left-1/2 -translate-x-1/2  bg-black/75 rounded-md w-[90%] h-12 z-50">
+    {/* <div className="fixed top-0 left-1/2 -translate-x-1/2  bg-black/75  w-[100%]  h-12 z-50">
   </div> */}
   </div>
   )
