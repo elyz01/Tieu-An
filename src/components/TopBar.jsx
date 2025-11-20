@@ -23,10 +23,10 @@ const TopBar = () => {
   const dateString = currentTime.toLocaleDateString("en-GB"); // dd/mm/yyyy
 
   return (
-<div className="flex py-1 flex-col items-center justify-center lg:flex-row lg:gap-1 bg-white">
+<div className="flex font-mono py-1 flex-col items-center justify-center lg:flex-row lg:gap-1 bg-white">
   <p>Trạm lưu trữ ký ức.</p>
   <p className="text-pink-500">
-    GMT+7 : {timeString} : {dateString}
+    GMT+7.{timeString}.{dateString}
   </p>
 </div>
   );
