@@ -10,6 +10,7 @@ function App() {
   return (
    <div className="relative">
     <TopBar />
+    <Header />
     <Routes>
     <Route path="/" element={<Homepage/>}/>
      

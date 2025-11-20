@@ -1,11 +1,28 @@
 import React, { } from "react";
+import DateCount from './DateCount';
 
 const ScrollImages = ({ images}) => {
+  const calculateDays = () => {
+    const startDate = new Date("2021-11-23");
+    const today = new Date();
+    const diffTime = today - startDate; // hiệu số ms
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    return diffDays;
+  };
 
 
   return (
-    <div className="w-full relative px-8 flex flex-col items-center ">
+    <div className="w-full  px-8 flex flex-col items-center ">
+      
+
      <div className="bg-white pb-14 relative">
+     <div className="absolute -top-14 -left-4 z-10 flex flex-col items-center">
+  <img className="w-60 -rotate-10 h-auto" src="./image3.png" alt="" />
+</div>
+<div className="absolute top-10 left-6 text-6xl z-11 ">
+<p className="text-pink-500 font-bold -rotate-5 classconfig">{calculateDays()} Days</p>
+
+  </div>
      {images.map((img, index) => {
       
       return (
@@ -20,10 +37,10 @@ const ScrollImages = ({ images}) => {
     })}
     <div className=" flex flex-col items-end">
       <p className="classconfig text-6xl absolute bottom-8 font-bold right-5 -rotate-10 text-right text-pink-500">
-        Toc xanh da tinh
+        Shumoru Chan
       </p>
       <p className="classconfig text-2xl absolute bottom-5  right-10 -rotate-10 text-right text-pink-500">
-        2025/11/21
+        1/12/2005
       </p>
     </div>
 
