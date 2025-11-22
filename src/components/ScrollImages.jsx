@@ -27,7 +27,7 @@ const ScrollImages = () => {
     
         <img
           key=""
-          src="./image1.jpg"
+          src="./An/image1.jpg"
           alt=""
           className="aspect-square w-full p-4 sm:w-120 object-cover "
         />

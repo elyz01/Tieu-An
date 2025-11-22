@@ -14,8 +14,9 @@ function App() {
   return (
    <div className="relative">
     <TopBar />
-    {/* <NavigationBar /> */}
+  
     <Header />
+    {/* <NavigationBar /> */}
     <Routes>
     <Route path="/" element={<Homepage/>}/>
     <Route path="/Elyz" element={<Minh/>}/>
@@ -23,6 +24,8 @@ function App() {
     <Route path="/Shu" element={<An/>}/>
      
     </Routes>
+    
+    
    
    </div>
   )

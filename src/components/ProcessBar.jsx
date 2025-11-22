@@ -14,7 +14,7 @@ const ProcessBar = () => {
         return () => window.removeEventListener("scroll", handleScroll);
       }, []);
       return (
-        <div className="fixed bottom-0 left-0 w-full h-18 bg-black">
+        <div className="fixed z-999 bottom-0 left-0 w-full h-18 bg-black">
           <div
             className="h-1 bg-white transition-all duration-150"
             style={{ width: `${progress}%` }}
