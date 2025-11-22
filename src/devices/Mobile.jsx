@@ -1,25 +1,28 @@
-import React from 'react'
-import ScrollImages from '../components/ScrollImages'
-import ProcessBar from './../components/ProcessBar';
-import Section1 from '../components/section1/Section1';
+import React from "react";
+import ScrollImages from "../components/ScrollImages";
+import ProcessBar from "./../components/ProcessBar";
+import Section1 from "../components/section1/Section1";
+import Section2 from "./../components/section2/Section2";
 
 const Mobile = () => {
-
   return (
-<div>
-<div className="w-full h-1000 relative  bg-gradient-to-b from-pink-200 to-[#111111] px-6   overflow-hidden">
-  <div className="w-full py-8 flex justify-center items-center relative">
-    <ScrollImages  />
-  </div>
-  <div className='relative'>
-  <ProcessBar />
-  <Section1 />
-  
-
-  </div>
-
+    <div>
+      <div className="w-full  relative     overflow-hidden">
+        <div className="w-full bg-gradient-to-b from-pink-200 to-[#111111] py-6 space-y-6  ">
+          <div className="relative">
+    <ScrollImages />
+          </div>
+          <Section1 />
+      
+        
+        </div>
+        
+        <div className="relative">
+          <ProcessBar />
+        </div>
+        <Section2 />
+      </div>
     </div>
-</div>
-  )
-}
-export default Mobile
+  );
+};
+export default Mobile;

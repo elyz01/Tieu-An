@@ -12,7 +12,7 @@ const ScrollImages = () => {
 
 
   return (
-    <div className="w-full flex flex-col items-center ">
+    <div className="w-full  px-6 flex flex-col items-center ">
       
 
      <div className="bg-white pb-14 relative">
